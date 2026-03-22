@@ -33,11 +33,27 @@ new Chart(ctx, {
         }]
     },
     options: {
+        layout: {
+            padding: {
+                top: 20,
+                bottom: 20,
+                left: 60,
+                right: 60
+            }
+        },
         scales: {
             r: {
                 angleLines: { color: 'rgba(255, 133, 162, 0.1)' },
                 grid: { color: 'rgba(255, 133, 162, 0.1)' },
-                pointLabels: { color: '#636E72', font: { size: 14, family: 'Inter' } },
+                pointLabels: { 
+                    color: '#636E72', 
+                    font: { 
+                        size: 12, 
+                        family: 'Inter',
+                        weight: '500'
+                    },
+                    padding: 10
+                },
                 ticks: { display: false },
                 suggestedMin: 0,
                 suggestedMax: 100
@@ -45,7 +61,8 @@ new Chart(ctx, {
         },
         plugins: {
             legend: { display: false }
-        }
+        },
+        maintainAspectRatio: false
     }
 });
 
@@ -63,7 +80,7 @@ const revealObserver = new IntersectionObserver((entries) => {
     });
 }, observerOptions);
 
-document.querySelectorAll('section, .stat-card, .project-card, .skill-category').forEach(el => {
+document.querySelectorAll('section, .stat-card, .project-card, .skill-category, .info-item, .c-form, .strength-card-v2').forEach(el => {
     el.style.opacity = '0';
     revealObserver.observe(el);
 });
