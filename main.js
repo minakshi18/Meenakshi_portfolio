@@ -24,20 +24,20 @@ new Chart(ctx, {
         datasets: [{
             label: 'Skill Proficiency',
             data: [90, 85, 80, 88, 75, 85, 95],
-            backgroundColor: 'rgba(99, 102, 241, 0.2)',
-            borderColor: '#6366f1',
-            pointBackgroundColor: '#6366f1',
+            backgroundColor: 'rgba(255, 133, 162, 0.2)',
+            borderColor: '#FF85A2',
+            pointBackgroundColor: '#FF85A2',
             pointBorderColor: '#fff',
             pointHoverBackgroundColor: '#fff',
-            pointHoverBorderColor: '#6366f1'
+            pointHoverBorderColor: '#FF85A2'
         }]
     },
     options: {
         scales: {
             r: {
-                angleLines: { color: 'rgba(255, 255, 255, 0.1)' },
-                grid: { color: 'rgba(255, 255, 255, 0.1)' },
-                pointLabels: { color: '#94a3b8', font: { size: 14 } },
+                angleLines: { color: 'rgba(255, 133, 162, 0.1)' },
+                grid: { color: 'rgba(255, 133, 162, 0.1)' },
+                pointLabels: { color: '#636E72', font: { size: 14, family: 'Inter' } },
                 ticks: { display: false },
                 suggestedMin: 0,
                 suggestedMax: 100
