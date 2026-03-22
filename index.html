@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meenakshi Neolia | Data Analytics Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="cursor-blur"></div>
+    
+    <nav id="navbar">
+        <div class="container">
+            <a href="#" class="logo">MN<span>.</span></a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="menu-btn" id="menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <header id="hero">
+        <div class="hero-content container">
+            <h5 class="fade-up">Hello, I'm Meenakshi</h5>
+            <h1 class="fade-up" style="animation-delay: 0.1s;">Turning data into <span class="highlight">Insights.</span></h1>
+            <p class="fade-up" style="animation-delay: 0.2s;">B.Tech Computer Science student at SRMU with a passion for Data Analytics and Visualization.</p>
+            <div class="hero-btns fade-up" style="animation-delay: 0.3s;">
+                <a href="#projects" class="btn btn-primary">View My Work</a>
+                <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+            </div>
+        </div>
+        <div class="scroll-down">
+            <div class="mouse"></div>
+            <span>Scroll Down</span>
+        </div>
+    </header>
+
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>About Me</h2>
+                <div class="line"></div>
+            </div>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>Highly motivated B.Tech Computer Science student with a strong focus on Data Analytics. Proficient in Python and Tableau, I am passionate about transforming raw data into actionable insights through meticulous cleaning and exploratory analysis.</p>
+                    <div class="strengths">
+                        <div class="strength-item">
+                            <i class="fas fa-brain"></i>
+                            <span>Analytical Thinking</span>
+                        </div>
+                        <div class="strength-item">
+                            <i class="fas fa-lightbulb"></i>
+                            <span>Problem Solving</span>
+                        </div>
+                        <div class="strength-item">
+                            <i class="fas fa-users"></i>
+                            <span>Team Collaboration</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <h3>Expected 2027</h3>
+                        <p>Graduation</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Python</h3>
+                        <p>Primary Lang</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="section bg-alt">
+        <div class="container">
+            <div class="section-header">
+                <h2>Education</h2>
+                <div class="line"></div>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Bachelor of Technology (B.Tech)</h3>
+                        <h4>Computer Science</h4>
+                        <p class="institution">Shri Ramswaroop Memorial University (SRMU)</p>
+                        <p class="date">Estimated Graduation: 2027</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Technical Toolkit</h2>
+                <div class="line"></div>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Languages</h3>
+                    <div class="skill-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Java</span>
+                        <span class="tag">SQL</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Data Analysis</h3>
+                    <div class="skill-tags">
+                        <span class="tag">Pandas</span>
+                        <span class="tag">NumPy</span>
+                        <span class="tag">Matplotlib</span>
+                        <span class="tag">Seaborn</span>
+                        <span class="tag">EDA</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Visualization Tools</h3>
+                    <div class="skill-tags">
+                        <span class="tag">Tableau</span>
+                        <span class="tag">Power BI</span>
+                        <span class="tag">Excel</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Core Concepts</h3>
+                    <div class="skill-tags">
+                        <span class="tag">OOPs</span>
+                        <span class="tag">Data Structures</span>
+                        <span class="tag">Web Scraping</span>
+                    </div>
+                </div>
+            </div>
+            <div class="data-story-box">
+                <canvas id="skillsChart"></canvas>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section bg-alt">
+        <div class="container">
+            <div class="section-header">
+                <h2>Featured Projects</h2>
+                <div class="line"></div>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="https://images.unsplash.com/photo-1551288049-bbda38a5f452?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Superstore Sales Analysis">
+                    </div>
+                    <div class="project-content">
+                        <h3>Superstore Sales Analysis Dashboard</h3>
+                        <p>Analyzed sales data by cleaning and processing the dataset with Python and Pandas. Created an interactive dashboard with Tableau.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Pandas</span>
+                            <span>Tableau</span>
+                        </div>
+                        <a href="https://public.tableau.com/views/SalesAnalysisDashboard_17715242169170/Dashboard1?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" target="_blank" class="project-link">View Project <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="certifications" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Certifications</h2>
+                <div class="line"></div>
+            </div>
+            <div class="cert-grid">
+                <div class="cert-card">
+                    <div class="cert-icon"><i class="fas fa-certificate"></i></div>
+                    <h3>Data Analysis with Python</h3>
+                    <p>Infosys Springboard</p>
+                    <span class="year">2025</span>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon"><i class="fas fa-laptop-code"></i></div>
+                    <h3>Data Analytics Job Simulation</h3>
+                    <p>Deloitte via Forage</p>
+                    <span class="year">2025</span>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon"><i class="fas fa-code"></i></div>
+                    <h3>Programming with Python</h3>
+                    <p>Internshala Trainings</p>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon"><i class="fas fa-briefcase"></i></div>
+                    <h3>Internship & Job Preparation</h3>
+                    <p>Internshala Trainings</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h2>MN<span>.</span></h2>
+                    <p>Meenakshi Neolia</p>
+                    <p>Lucknow, Uttar Pradesh</p>
+                </div>
+                <div class="footer-links">
+                    <a href="mailto:meenakshineolia2005@gmail.com"><i class="fas fa-envelope"></i> meenakshineolia2005@gmail.com</a>
+                    <a href="tel:+916386028974"><i class="fas fa-phone"></i> 06386028974</a>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/meenakshineolia26" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/minakshi18" target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Meenakshi Neolia. Designed with <span class="heart">❤</span> for Data.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
